@@ -1,8 +1,10 @@
+# -*- coding: utf-8 -*-
 # https://www.acmicpc.net/problem/1717
 
 import sys
+# 재귀 깊이 제한 늘리기 - 안할 경우 런타임 에러 (RecursionError)
+sys.setrecursionlimit(1000000)
 input = sys.stdin.readline
-
 N, M = map(int, input().split())
 
 # 부모 테이블 생성
